@@ -1,5 +1,6 @@
 import Notiflix from 'notiflix';
 
+const form = document.querySelector('.form');
 const submitBtn = document.querySelector('button');
 const firstDelay = document.querySelector('input[name=delay]');
 const stepDelay = document.querySelector('input[name=step]');
@@ -35,6 +36,7 @@ function onclick(e) {
         );
       });
   }
+  form.reset();
 }
 
 submitBtn.addEventListener('click', onclick);
